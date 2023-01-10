@@ -1,0 +1,43 @@
+.TaskCreator{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.TaskCreator input{
+    background-color: var(--primary-500);
+    width: 39.875rem;
+    height: 3.375rem;
+    border-radius: 8px;
+    border: none;
+    padding: 1rem;
+    font-size: var(--lg);
+    color: var(--text-base);
+}
+
+.TaskCreator input:focus{
+    outline: transparent;
+    box-shadow: 0 0 0 1px var(--tertiary-600);
+}
+
+
+.TaskCreator button{
+    background-color: var(--secondary-600);
+    color: var(--text-base);
+    width: 5.625rem;
+    height: 3.25rem;
+    border-radius: 8px;
+    border: none;
+    padding: 1rem;
+    font-size: var(--md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TaskCreator button:hover{
+    background-color: var(--secondary-500);
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+}

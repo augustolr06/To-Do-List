@@ -27,6 +27,12 @@
   --lg: 1rem;
 
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 140%;
+}
 
 body {
   background-color: var(--bg);

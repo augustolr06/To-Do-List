@@ -1,0 +1,12 @@
+.header{
+    background-color: var(--primary-700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12.5rem;
+}
+
+.logo{
+    width: 10rem;
+    height: 5.125rem;
+}

@@ -1,0 +1,36 @@
+:root {
+  -webkit-text-size-adjust: 100%;
+
+  /* Colors:       */
+  --bg: #454545;
+  --text-base: #FFFFFF;
+
+  --primary-700: #0D0D0D;
+  --primary-600: #1A1A1A;
+  --primary-500: #262626;
+  --primary-400: #333333;
+  --primary-300: #808080;
+  --primary-200: #D9D9D9;
+  --primary-100: #F2F2F2;
+
+  --secondary-500: #4EA8DE;
+  --secondary-600: #1E6F9F;
+
+  --tertiary-500: #8284FA;
+  --tertiary-600: #5E60CE;
+
+  --danger: #E25858;
+
+  /* Fonts Sizes       */
+  --sm: 1.333rem;
+  --md: 1.142rem;
+  --lg: 1rem;
+
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-base);
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Inter', sans-serif;
+}

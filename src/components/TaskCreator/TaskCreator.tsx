@@ -1,3 +1,4 @@
+import React from 'react';
 import { PlusCircle } from 'phosphor-react';
 
 import styles from './TaskCreator.module.css';

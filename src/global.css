@@ -2,7 +2,6 @@
   -webkit-text-size-adjust: 100%;
 
   /* Colors:       */
-  --bg: #454545;
   --text-base: #FFFFFF;
 
   --primary-700: #0D0D0D;
@@ -35,7 +34,7 @@
 }
 
 body {
-  background-color: var(--bg);
+  background-color: var(--primary-600);
   color: var(--text-base);
   -webkit-font-smoothing: antialiased;
   font-family: 'Inter', sans-serif;

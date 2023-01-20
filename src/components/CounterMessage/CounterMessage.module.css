@@ -1,0 +1,29 @@
+.counterMessage {
+  font-weight: 700;
+
+  display: flex;
+  gap: 0.5rem;
+}
+
+.defaultLabel {
+  color: var(--primary-200);
+}
+
+.secondaryColorLabel {
+  color: var(--secondary-500);
+}
+
+.tertiaryColorLabel {
+  color: var(--tertiary-500);
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.125rem 0.5rem;
+  font-size: var(--sm);
+  color: var(--primary-200);
+  background-color: var(--primary-400);
+}

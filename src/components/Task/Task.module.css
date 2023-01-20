@@ -1,0 +1,29 @@
+.Task {
+  width: 100%;
+  margin: 0.75rem auto 0;
+  padding: 1rem 0;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+  background-color: var(--primary-400);
+}
+
+.Task span {
+  text-align: -moz-center;
+  width: 39.5rem;
+}
+
+.Task button {
+  background-color: transparent;
+  outline: 0;
+  box-shadow: 0 0 0 0;
+  border: none;
+  cursor: pointer;
+}
+
+.Task button:hover{
+  opacity: 0.5;
+}

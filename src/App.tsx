@@ -5,6 +5,7 @@ import { TaskCreator } from './components/TaskCreator/TaskCreator';
 
 import styles from './App.module.css';
 import './global.css';
+import { CounterMessage } from './components/CounterMessage/CounterMessage';
 
 export function App() {
 
@@ -15,8 +16,8 @@ export function App() {
 			<TaskCreator />
 			<div className={styles.taskArea}>
 				<div className={styles.taskAreaHeader}>
-					<span>terfeas criadas</span>
-					<span>concluídas</span>
+					<CounterMessage label='Tarefas Criadas' createdTasks={10}/>
+					<CounterMessage label='Concluídas' createdTasks={10} finishTasks={4} />
 				</div>
 
 			</div>

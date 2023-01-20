@@ -7,7 +7,7 @@
 }
 
 .taskAreaHeader {
-  background-color: burlywood;
+  background-color: transparent;
   width: 736px;
   display: flex;
   justify-content: space-between;

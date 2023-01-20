@@ -6,6 +6,7 @@ import { TaskCreator } from './components/TaskCreator/TaskCreator';
 import styles from './App.module.css';
 import './global.css';
 import { CounterMessage } from './components/CounterMessage/CounterMessage';
+import { Task } from './components/Task/Task';
 
 export function App() {
 
@@ -19,6 +20,10 @@ export function App() {
 					<CounterMessage label='Tarefas Criadas' createdTasks={10}/>
 					<CounterMessage label='Concluídas' createdTasks={10} finishTasks={4} />
 				</div>
+				<Task />
+				<Task />
+				<Task />
+				<Task />
 
 			</div>
 		</div>

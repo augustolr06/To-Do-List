@@ -1,4 +1,11 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .taskArea {
+  width: 46rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,4 +19,5 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 0.75rem;
 }

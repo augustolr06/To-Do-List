@@ -19,7 +19,10 @@ export function Task() {
 			</button>
 			
 			<span>Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.</span>
-			<Trash size={24} color='#808080'/>
+      
+			<button>
+				<Trash size={24} color='#808080'/>
+			</button>
 		</div>
 	);
 }

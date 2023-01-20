@@ -1,4 +1,5 @@
 .TaskCreator{
+    margin-top: -1.6875rem;
     display: flex;
     justify-content: center;
     gap: 0.5rem;
@@ -19,7 +20,6 @@
     outline: transparent;
     box-shadow: 0 0 0 1px var(--tertiary-600);
 }
-
 
 .TaskCreator button{
     background-color: var(--secondary-600);

@@ -14,14 +14,18 @@ export function Task() {
 		<div className={styles.Task}>
 			<button onClick={handleDoneTask}>
 				{
-					doneTask ? <CheckCircle size={24} color='#5E60CE' weight='bold' /> : <Circle size={24} color='#4EA8DE' weight='bold' />
+					doneTask ? 
+						<CheckCircle size={24} weight='fill' className={styles.checkedButton} />
+						: 
+						<Circle size={24} weight='bold' className={styles.uncheckedButton} />
 				}
+				<img src='src\assets\shadow.svg' className={styles.shadow}></img>
 			</button>
 			
 			<span>Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.</span>
       
 			<button>
-				<Trash size={24} color='#808080'/>
+				<Trash size={24} className={styles.delete} />
 			</button>
 		</div>
 	);

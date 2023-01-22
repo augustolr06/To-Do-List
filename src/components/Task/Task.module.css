@@ -18,12 +18,67 @@
 
 .Task button {
   background-color: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 100%;
   outline: 0;
   box-shadow: 0 0 0 0;
   border: none;
   cursor: pointer;
 }
 
-.Task button:hover{
-  opacity: 0.5;
+.Task .checkedButton {
+  color: var(--tertiary-600);
+  z-index: 1;
+
+  transition: color 0.3s;
+}
+
+.Task .checkedButton:hover {
+  color: var(--tertiary-500);
+}
+
+.uncheckedButton {
+  background-color: transparent;
+  color: var(--secondary-500);
+  z-index: 1;
+
+  transition: color 0.3s;
+}
+
+.uncheckedButton:hover {
+  color: var(--secondary-600);
+
+  transition: color 0.3s;
+}
+
+.shadow {
+  position: absolute;
+  border-radius: 100%;
+  background-color: transparent;
+  opacity: 1;
+  z-index: 0;
+
+  transition: background-color 0.3s opacity 0.3s;
+}
+
+.uncheckedButton:hover + .shadow{
+  background-color: var(--secondary-600);
+  opacity: 0.4;
+
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+.Task .delete {
+  color: var(--primary-300);
+
+  transition: color 0.3s;
+}
+
+
+.Task .delete:hover {
+  color: var(--danger);
 }

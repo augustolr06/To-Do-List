@@ -1,5 +1,5 @@
 import React from 'react';
-import { PlusCircle } from 'phosphor-react';
+import { Button } from '../Button/Button';
 
 import styles from './TaskCreator.module.css';
 
@@ -9,10 +9,7 @@ export function TaskCreator(){
 		<div className={styles.TaskCreator}>
 
 			<input type="text" placeholder='Adicione uma nova tarefa' />
-			<button>
-                Criar
-				<PlusCircle size={16}/>
-			</button>
+			<Button label='Criar' icon='add' />
 
 		</div>
 	);

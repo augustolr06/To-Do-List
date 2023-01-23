@@ -1,0 +1,20 @@
+.Button{
+  background-color: var(--secondary-600);
+  color: var(--text-base);
+  width: 5.625rem;
+  height: 3.25rem;
+  border-radius: 8px;
+  border: none;
+  padding: 1rem;
+  font-size: var(--md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Button:hover{
+  background-color: var(--secondary-500);
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+}

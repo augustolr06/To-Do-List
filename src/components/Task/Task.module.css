@@ -12,9 +12,27 @@
 }
 
 .Task span {
-  text-align: -moz-center;
+  text-align: left;
   width: 39.5rem;
+  height: auto;
+  line-height: 140%;
+  font-size: var(--md);
 }
+
+.Task .doneText {
+  text-decoration: line-through;
+  color: var(--primary-300);
+
+  transition: color 0.2s;
+}
+
+.Task .defaultText{
+  text-decoration: none;
+  color: var(--primary-100);
+
+  transition: color 0.2s;
+}
+
 
 .Task button {
   background-color: transparent;

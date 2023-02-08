@@ -22,7 +22,9 @@ export function Task() {
 				<img src='src\assets\shadow.svg' className={styles.shadow}></img>
 			</button>
 			
-			<span>Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.</span>
+			<span className={doneTask ? styles.doneText : styles.defaultText} >
+        Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.
+			</span>
       
 			<button>
 				<Trash size={24} className={styles.delete} />

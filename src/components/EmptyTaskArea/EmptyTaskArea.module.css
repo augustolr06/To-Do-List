@@ -1,0 +1,23 @@
+.EmptyTaskArea {
+  border-top: 1px solid var(--primary-400);
+  border-radius: 8px;
+
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  padding: 4rem 1.5rem;
+  gap: 1rem;
+
+  color: var(--primary-300);
+}
+
+.EmptyTaskArea span {
+  display: flex;
+  flex-direction: column;
+  line-height: 140%;
+  font-size: var(--lg);
+}

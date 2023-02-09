@@ -18,6 +18,5 @@
 .EmptyTaskArea span {
   display: flex;
   flex-direction: column;
-  line-height: 140%;
   font-size: var(--lg);
 }

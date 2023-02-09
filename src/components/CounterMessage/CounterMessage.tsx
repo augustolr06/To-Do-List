@@ -4,20 +4,35 @@ import styles from './CounterMessage.module.css';
 export interface CounterMessageProps {
   label: 'Tarefas Criadas' | 'Concluídas',
   createdTasks: number,
-  finishTasks?: number,
+  finishedTasks?: number,
 }
 
 export function CounterMessage(props:CounterMessageProps) {
-	const { label, createdTasks, finishTasks } = props;
-
+	const { label, createdTasks, finishedTasks } = props;
 	return (
 		<div className={styles.counterMessage}>
-			<span className={label=== 'Tarefas Criadas' ? styles.secondaryColorLabel : label === 'Concluídas' ? styles.tertiaryColorLabel : styles.defaultLabel} >
-				{label}
-			</span>
-			<span className={styles.counter} >
-				{finishTasks && `${finishTasks} de `}{createdTasks}
-			</span>
+			{label === 'Tarefas Criadas' ?
+				<>
+					<span className={styles.secondaryColorLabel} >
+						{label}
+					</span>
+					<span className={styles.counter} >
+						{createdTasks}
+					</span>
+				</>
+				: label === 'Concluídas' ?
+					<>
+						<span className={styles.tertiaryColorLabel} >
+							{label}
+						</span>
+						<span className={styles.counter} >
+							{`${finishedTasks} de `}{createdTasks}
+						</span>
+					</>
+					:
+					<></>
+			}
+			
 		</div>
 	);
 }

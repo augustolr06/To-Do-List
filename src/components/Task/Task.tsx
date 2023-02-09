@@ -2,8 +2,12 @@ import React, { useState } from 'react';
 import styles from './Task.module.css';
 import { CheckCircle, Circle, Trash } from 'phosphor-react';
 
+export interface TaskProps {
+  textContent: string
+}
 
-export function Task() {
+export function Task(props: TaskProps) {
+	const { textContent } = props;
 	const [doneTask, setDoneTask] = useState(false);
 
 	function handleDoneTask(){
@@ -23,7 +27,7 @@ export function Task() {
 			</button>
 			
 			<span className={doneTask ? styles.doneText : styles.defaultText} >
-        Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.
+				{textContent}
 			</span>
       
 			<button>

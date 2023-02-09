@@ -21,3 +21,10 @@
   align-items: center;
   margin-bottom: 0.75rem;
 }
+
+.TaskCreator{
+  margin-top: -1.6875rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}

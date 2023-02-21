@@ -11,7 +11,7 @@ export interface TaskProps {
 }
 
 export function Task(props: TaskProps) {
-	const { id, textContent, done, onDone, onDelete } = props;
+	const { textContent, done, onDone, onDelete } = props;
 
 	return (
 		<div className={styles.Task}>
@@ -26,7 +26,7 @@ export function Task(props: TaskProps) {
 			</button>
 			
 			<span className={done ? styles.doneText : styles.defaultText} >
-				{`${textContent} id: ${id?.toString()}`}
+				{textContent}
 			</span>
       
 			<button onClick={onDelete}>

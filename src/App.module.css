@@ -25,6 +25,6 @@
 .TaskCreator{
   margin-top: -1.6875rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 0.5rem;
 }
